@@ -32,6 +32,10 @@
             phrase = document.getElementById("phrase").value
 
             out = document.getElementById("result")
+            if (wrong == 3) {
+                return alert("Account Locked")
+            }
+
             if (sphrase == phrase) {
                 correct = correct + 1
                 alert("Access is allowed")
