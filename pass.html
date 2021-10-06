@@ -44,27 +44,26 @@
         }
 
         let usingImage = 1
-        function newImage(img) {
-            debugger;
+        function newImage() {
             switch (usingImage) {
                 case 1:
-                    document.getElementById("Images").src = "Images/giraffe.JPG"
+                    document.getElementById("Images").src = "images/giraffe.jpg"
                     usingImage++;
                     break;
                 case 2:
-                    document.getElementById("Images").src = "Images/impala.jpg"
+                    document.getElementById("Images").src = "images/impala.jpg"
                     usingImage++;
                     break;
                 default:
                     usingImage = 1;
-                    document.getElementById("Images").src = "Images/urchin.jpg"
+                    document.getElementById("Images").src = "images/urchin.jpg"
                     break;
             }
         }
     </script>
     <div class="container">
         <h2>Images</h2>
-        <img src="Images/giraffe.jpg" id="Images" alt="Giraffe" height="200" width="200" onclick="newImage()">
+        <img src="images/giraffe.jpg" id="Images" alt="Giraffe" height="200" width="200" onclick="newImage()">
     </div>
 
 </body>
