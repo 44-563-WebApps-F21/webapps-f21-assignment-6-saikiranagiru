@@ -35,6 +35,7 @@
 
 </form>
 
+<p id="radioButtonResult">Calculated Values will display here</p>
 
 <script> 
 
@@ -57,7 +58,7 @@ function processRadio() {
     minus = document.getElementById("rg1_minus").checked
     times = document.getElementById("rg1_times").checked
     divide = document.getElementById("rg1_divide").checked
-    result = document.getElementById("resultValue")
+    result = document.getElementById("radioButtonResult")
 
     if (plus)
     result.innerHTML = +base + +exponent
